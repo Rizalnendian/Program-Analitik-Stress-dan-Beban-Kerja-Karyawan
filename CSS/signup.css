@@ -6,17 +6,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Latar belakang dengan gradien Biru Tua Navy - Dark Blue */
+/* Background */
 body {
     background-image: url(../property/bg\ branding.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; /* Memastikan background tetap di tengah */
+    background-position: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Mencegah form menempel di pinggir layar HP */
+    padding: 20px; 
 }
 
 /* Kotak Form Putih */
@@ -36,19 +36,23 @@ body {
     top: 20px;
     right: 20px;
     font-size: 22px;
-    color: #002855;
+    color: #004bb7;
     cursor: pointer;
     font-weight: bold;
 }
 
-/* Judul Form (Bodoni Moda) dengan warna Navy-Blue */
+.close{
+    text-decoration: none;
+}
+
+/* Judul Form */
 .form-title {
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 26px;
     margin-bottom: 35px;
-    color: #001e4d;
+    color: #002855;
     letter-spacing: 0.5px;
 }
 
@@ -75,12 +79,11 @@ body {
 }
 
 /* Gaya Input & Dropdown */
-.input-group input,
-.input-group select {
+.input-group input, .input-group select {
     width: 100%;
     padding: 10px 10px 10px 22px;
     border: none;
-    border-bottom: 2px solid #004bb7; /* Garis bawah Biru Tua */
+    border-bottom: 2px solid #004bb7;
     outline: none;
     font-size: 14px;
     color: #222222;
@@ -107,10 +110,10 @@ body {
 
 .input-group input:focus,
 .input-group select:focus {
-    border-bottom-color: #00112c; /* Menjadi navy tua saat aktif */
+    border-bottom-color: #00112c; 
 }
 
-/* Panah khusus Dropdown */
+/* Panah Dropdown */
 .arrow-icon {
     position: absolute;
     right: 5px;
@@ -140,7 +143,7 @@ body {
 .checkbox-group input {
     margin-top: 3px;
     cursor: pointer;
-    accent-color: #002855; /* Warna checklist checkbox */
+    accent-color: #002855;
 }
 
 .checkbox-group label {
@@ -149,11 +152,11 @@ body {
     line-height: 1.4;
 }
 
-/* Tombol Submit dengan Gradien Navy ke Dark Blue */
+/* Tombol Submit */
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background-color: #00367a;
+    background-color: #004bb7;
     border: none;
     color: #ffffff;
     font-size: 13px;
@@ -165,7 +168,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #001f4d;
+    background-color: #002855;
 }
 
 /* Teks Footer */
@@ -186,14 +189,12 @@ body {
     text-decoration: underline;
 }
 
-/* ===================================================
-   MEDIA QUERIES (RESPONSIF SIZES)
-   =================================================== */
 
-/* Layar HP / Mobile (Maksimal 480px) */
+/*MEDIA QUERIES (RESPONSIF SIZES)*/
+
 @media (max-width: 480px) {
     .form-container {
-        padding: 30px 20px; /* Memperkecil padding dalam agar muat di HP kecil */
+        padding: 30px 20px; 
     }
 
     .close-btn {
@@ -203,7 +204,7 @@ body {
     }
 
     .form-title {
-        font-size: 21px; /* Mengurangi ukuran judul agar tidak terpotong */
+        font-size: 21px; 
         margin-bottom: 25px;
     }
 
@@ -213,7 +214,7 @@ body {
 
     .input-group input,
     .input-group select {
-        font-size: 16px; /* Ukuran 16px mencegah auto-zoom berlebih di iOS Safari */
+        font-size: 16px; 
         padding: 8px 8px 8px 20px;
     }
 
@@ -223,7 +224,7 @@ body {
     }
 
     .checkbox-group label {
-        font-size: 10px; /* Sedikit dibesarkan agar mudah dibaca di layar HP */
+        font-size: 10px; 
     }
 
     .submit-btn {
@@ -232,10 +233,10 @@ body {
     }
 }
 
-/* Layar dengan Tinggi Rendah / Mode Landscape (Maksimal 650px tinggi) */
+
 @media (max-height: 650px) {
     body {
-        align-items: flex-start; /* Mencegah form terpotong di atas/bawah */
+        align-items: flex-start; 
         padding-top: 30px;
         padding-bottom: 30px;
     }

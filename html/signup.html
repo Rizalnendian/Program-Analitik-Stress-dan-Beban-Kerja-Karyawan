@@ -16,7 +16,7 @@
 
     <div class="form-container">
         <!-- Tombol Close (X) -->
-        <div class="close-btn"><a href="../html/index.html">&times;</a></div>
+        <div class="close-btn"><a class="close" href="../html/index.html">&times;</a></div>
 
         <!-- Judul Form (Bodoni Moda) -->
         <h2 class="form-title"><span>•</span> Registration Form <span>•</span></h2>
@@ -35,6 +35,16 @@
             </div>
 
             <!-- Dropdown Jenis Kelamin -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <select required>
+                    <option value="" disabled selected hidden>Role</option>
+                    <option value="Manajer">Manajer</option>
+                    <option value="Staf">Staf</option>
+                </select>
+                <span class="arrow-icon">▼</span>
+            </div>
+
             <div class="input-group">
                 <span class="dot">•</span>
                 <select required>
@@ -61,7 +71,7 @@
             <!-- Checkbox Persyaratan -->
             <div class="checkbox-group">
                 <input type="checkbox" id="terms" required>
-                <label for="terms">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</label>
+                <label for="terms">Ceklis jika data yang diinput sudah benar dan tidak ada kesalahan penulisan maupun data. </label>
             </div>
 
             <!-- Tombol Submit -->
