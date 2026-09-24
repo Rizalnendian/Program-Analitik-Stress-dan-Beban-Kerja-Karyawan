@@ -67,7 +67,7 @@
 .submit-btn {
     width: 100%;
     padding: 15px;
-    background: #00367a;
+    background: #004bb7;
     border: none;
     color: #ffffff;
     font-size: 13px;
@@ -79,11 +79,16 @@
 }
 
 .submit-btn:hover {
-    background-color: #001f4d;
+    background-color: #002855;
 }
 
 a.sign-up{
-    color: black;
+    color: #004bb7;
+    font-weight: bold;
+}
+
+a.sign-up :hover{
+    color: #002855;
     font-weight: bold;
 }
 
