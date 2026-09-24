@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <!-- Mengimpor Montserrat dan Bodoni Moda dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Tombol Close (X) -->
+        <div class="close-btn"><a href="../html/index.html">&times;</a></div>
+
+        <!-- Judul Form (Bodoni Moda) -->
+        <h2 class="form-title"><span>•</span> Registration Form <span>•</span></h2>
+
+        <form action="#">
+            <!-- Input Nama -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <input type="text" placeholder="Name" required>
+            </div>
+
+            <!-- Input Email -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <input type="email" placeholder="Email address" required>
+            </div>
+
+            <!-- Dropdown Jenis Kelamin -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <select required>
+                    <option value="" disabled selected hidden>Jenis Kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+                <span class="arrow-icon">▼</span>
+            </div>
+
+            <!-- Input Divisi -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <input type="text" placeholder="Divisi" required>
+            </div>
+
+            <!-- Input Password -->
+            <div class="input-group">
+                <span class="dot">•</span>
+                <input type="password" placeholder="Password" required>
+                <span class="eye-icon">👁</span> 
+            </div>
+
+            <!-- Checkbox Persyaratan -->
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat</label>
+            </div>
+
+            <!-- Tombol Submit -->
+            <button type="submit" class="submit-btn">CREATE ACCOUNT</button>
+
+            <!-- Link Login -->
+            <p class="footer-text">
+                Already have an account? <a href="../html/index.html">Sign in</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
