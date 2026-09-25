@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../CSS/karyawan/profile.css">
+    <link rel="stylesheet" href="../../CSS/karyawan/dashboard.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Profile</title>
+    <title>Dashboard</title>
 </head>
 <body>
+  <!-- navbar -->
 <div id="appDashboard" class="app-layout">
 
   <!-- Sidebar Overlay (Latar Belakang Gelap di Mobile) -->
@@ -36,17 +37,17 @@
     <nav class="sidebar-nav">
       <div class="nav-label">Menu Utama</div>
 
-      <div class="nav-item" onclick="window.location.href='../karyawan/dashboard_karyawan.html'">
+      <div class="nav-item " onclick="window.location.href='../karyawan/dashboard_karyawan.html'">
         <span class="nav-icon"><i class="bi bi-house-door"></i></span>
         <span>Dashboard</span>
       </div>
 
-      <div class="nav-item active" onclick="window.location.href='../html/profile.html'">
+      <div class="nav-item active" onclick="window.location.href='../karyawan/profile.html'">
         <span class="nav-icon"><i class="bi bi-person-circle"></i></span>
         <span>Profile</span>
       </div>
 
-      <div class="nav-item" onclick="window.location.href='tracking.html'">
+      <div class="nav-item" onclick="window.location.href=''">
         <span class="nav-icon"><i class="bi bi-file-earmark-medical"></i></span>
         <span>Survei kesehatan mental</span>
       </div>
@@ -71,7 +72,7 @@
         <button class="mobile-toggle-btn" id="sidebarToggleBtn">
           <i class="bi bi-list"></i>
         </button>
-        <h2>Profile</h2>
+        <h2>Dashboard</h2>
       </div>
       <div class="topbar-right">
         <span class="topbar-time">Selasa, 14 Mei</span>
@@ -84,6 +85,8 @@
   </div>
 
 </div>
+
+
 
 <!-- JavaScript untuk Toggle Menu -->
 <script>
