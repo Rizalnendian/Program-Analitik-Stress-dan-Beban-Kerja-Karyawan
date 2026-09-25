@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/karyawan/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<div id="appDashboard" class="app-layout">
+
+  <!-- Sidebar Overlay (Latar Belakang Gelap di Mobile) -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- Sidebar Navigasi -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">📚</div>
+      <div class="logo-text">
+        <span class="app-name">SITTA</span>
+        <span class="app-sub">Sistem analitik stress dan beban kerja</span>
+      </div>
+      <!-- Tombol Tutup Khusus Mobile -->
+      <button class="sidebar-close-btn" id="sidebarCloseBtn">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar">3</div>
+      <div class="user-name">Test nanti disini muncul nama</div>
+      <div class="user-role">Manajer</div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Menu Utama</div>
+
+      <div class="nav-item active">
+        <span class="nav-icon"><i class="bi bi-house-door"></i></span>
+        <span>Dashboard</span>
+      </div>
+
+      <div class="nav-item" onclick="window.location.href='../karyawan/profile.html'">
+        <span class="nav-icon"><i class="bi bi-person-circle"></i></span>
+        <span>Profile</span>
+      </div>
+
+      <div class="nav-item" onclick="window.location.href=''">
+        <span class="nav-icon"><i class="bi bi-file-earmark-medical"></i></span>
+        <span>Survei kesehatan mental</span>
+      </div>
+    </nav>
+
+    <div class="sidebar-footer">
+      <button
+        class="btn btn-outline btn-full btn-sm"
+        style="color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.2); width:100%; display:flex; align-items:center; gap:8px;"
+      >
+        <span><i class="bi bi-door-closed"></i></span> 
+        <span><a href="../html/index.html">Logout</a></span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Konten Utama & Topbar -->
+  <div class="main-content">
+    <header class="topbar">
+      <div class="topbar-left">
+        <!-- Tombol Hamburger (Hanya muncul di Layar Kecil) -->
+        <button class="mobile-toggle-btn" id="sidebarToggleBtn">
+          <i class="bi bi-list"></i>
+        </button>
+        <h2>Dashboard</h2>
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-time">Selasa, 14 Mei</span>
+      </div>
+    </header>
+
+    <main class="page-body">
+      <!-- Isikan Konten Dashboard Anda Di Sini -->
+    </main>
+  </div>
+
+</div>
+
+<!-- JavaScript untuk Toggle Menu -->
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+  const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
+  const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    sidebarOverlay.classList.add('active');
+  }
+
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    sidebarOverlay.classList.remove('active');
+  }
+
+  sidebarToggleBtn.addEventListener('click', openSidebar);
+  sidebarCloseBtn.addEventListener('click', closeSidebar);
+  sidebarOverlay.addEventListener('click', closeSidebar);
+</script>
+</body>
+</html>

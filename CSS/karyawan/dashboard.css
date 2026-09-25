@@ -1,0 +1,210 @@
+/* RESET & DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa; 
+    color: #040914; 
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* LAYOUT UTAMA */
+.app-layout { 
+    display: flex; 
+    min-height: 100vh; 
+    position: relative;
+}
+
+/* SIDEBAR (Navigasi Kiri) */
+.sidebar {
+    width: 250px;
+    background-color: #002855; 
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+
+.sidebar-logo {
+    padding: 24px 20px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.sidebar-logo .logo-icon {
+    width: 40px; height: 40px;
+    background-color: #004bb7; 
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    color: #ffffff;
+}
+
+.sidebar-logo .logo-text .app-name { color: #ffffff; font-weight: 700; font-size: 14px; display: block; }
+.sidebar-logo .logo-text .app-sub  { color: rgba(255,255,255,.45); font-size: 11px; display: block; }
+
+/* Tombol Tutup di Mobile (Hidden secara Default) */
+.sidebar-close-btn {
+    display: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.sidebar-user {
+    padding: 16px 20px;
+    background: rgba(255,255,255,.04);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.sidebar-user .user-avatar {
+    width: 36px; height: 36px;
+    background-color: #004bb7;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.sidebar-user .user-name  { color: #ffffff; font-size: 13px; font-weight: 600; }
+.sidebar-user .user-role  { color: rgba(255,255,255,.45); font-size: 11px; }
+
+/* MENU NAVIGASI */
+.sidebar-nav { flex: 1; padding: 16px 12px; }
+.nav-label { 
+    font-size: 10px; font-weight: 700; color: rgba(255,255,255,.3); 
+    text-transform: uppercase; letter-spacing: 1.5px; padding: 12px 8px 6px; 
+}
+
+.nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: rgba(255,255,255,.65);
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: all 0.25s cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.nav-item:hover { background: rgba(255,255,255,.08); color: #ffffff; }
+.nav-item.active { background: #004bb7; color: #ffffff; }
+.nav-item .nav-icon { font-size: 16px; width: 20px; flex-shrink: 0; }
+
+.sidebar-footer {
+    padding: 16px 12px;
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+/* KONTEN UTAMA & TOPBAR */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease;
+}
+
+.topbar {
+    background: #ffffff;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.topbar-left { display: flex; align-items: center; gap: 12px; }
+.topbar-left h2 { font-size: 1.1rem; font-weight: 700; color: #040914; }
+
+.mobile-toggle-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: #002855;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-body { padding: 24px; flex: 1; }
+
+/* OVERLAY UNTUK MOBILE */
+.sidebar-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(4, 9, 20, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* MEDIA QUERIES (RESPONSIF) */
+
+/* Tablet & Mobile (di bawah 768px) */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%); /* Sembunyikan sidebar ke kiri */
+        box-shadow: 5px 0 25px rgba(0,0,0,0.2);
+    }
+
+    .sidebar.open {
+        transform: translateX(0); /* Munculkan saat active */
+    }
+
+    .sidebar-close-btn {
+        display: block; /* Munculkan tombol close di sidebar */
+    }
+
+    .main-content {
+        margin-left: 0; /* Margin nol agar konten memenuhi layar */
+    }
+
+    .mobile-toggle-btn {
+        display: flex; /* Munculkan tombol hamburger di topbar */
+    }
+
+    .page-body {
+        padding: 16px;
+    }
+}
+
+/* HP Kecil (di bawah 480px) */
+@media (max-width: 480px) {
+    .topbar {
+        padding: 12px 16px;
+    }
+    
+    .topbar-left h2 {
+        font-size: 1rem;
+    }
+}
