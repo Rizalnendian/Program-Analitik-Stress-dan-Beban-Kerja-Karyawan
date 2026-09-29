@@ -8,6 +8,7 @@
     min-height: 100%;
 }
 
+
 .font{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -50,6 +51,7 @@
     min-height: 100vh;
     /* flex: 1; */
 
+
 }
 
 .title{
@@ -62,8 +64,31 @@
     padding-right: 100px;
 }
 
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #004bb7;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #002855;
+}
+
 a.sign-up{
-    color: black;
+    color: #004bb7;
+    font-weight: bold;
+}
+
+a.sign-up :hover{
+    color: #002855;
     font-weight: bold;
 }
 
