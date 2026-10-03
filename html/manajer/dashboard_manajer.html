@@ -50,9 +50,9 @@
                         <span>Profile</span>
                     </div>
 
-                    <div class="nav-item" onclick="window.location.href='../karyawan/survei.html'">
+                    <div class="nav-item" onclick="window.location.href='../manajer/alokasi_tugas.html'">
                         <span class="nav-icon"><i class="bi bi-file-earmark-medical"></i></span>
-                        <span>Survei stress & beban kerja</span>
+                        <span>Form alokasi tugas</span>
                     </div>
                 </nav>
 
@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="topbar-right">
-                        <span class="topbar-time">Selasa, 14 Mei</span>
+                        <span class="topbar-time" id="hari-tanggal">-- -- ----</span>
                     </div>
                 </header>
 
@@ -118,5 +118,7 @@
             sidebarCloseBtn.addEventListener('click', closeSidebar);
             sidebarOverlay.addEventListener('click', closeSidebar);
         </script>
+
+        <script src="../../JavaScript/tanggal.js" defer></script>
     </body>
 </html>
