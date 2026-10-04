@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
 }
 
 /* Kotak Form Putih */
@@ -41,7 +41,7 @@ body {
     font-weight: bold;
 }
 
-.close{
+.close {
     text-decoration: none;
 }
 
@@ -79,7 +79,8 @@ body {
 }
 
 /* Gaya Input & Dropdown */
-.input-group input, .input-group select {
+.input-group input,
+.input-group select {
     width: 100%;
     padding: 10px 10px 10px 22px;
     border: none;
@@ -110,7 +111,7 @@ body {
 
 .input-group input:focus,
 .input-group select:focus {
-    border-bottom-color: #00112c; 
+    border-bottom-color: #00112c;
 }
 
 /* Panah Dropdown */
@@ -189,12 +190,11 @@ body {
     text-decoration: underline;
 }
 
-
 /*MEDIA QUERIES (RESPONSIF SIZES)*/
 
 @media (max-width: 480px) {
     .form-container {
-        padding: 30px 20px; 
+        padding: 30px 20px;
     }
 
     .close-btn {
@@ -204,7 +204,7 @@ body {
     }
 
     .form-title {
-        font-size: 21px; 
+        font-size: 21px;
         margin-bottom: 25px;
     }
 
@@ -214,7 +214,7 @@ body {
 
     .input-group input,
     .input-group select {
-        font-size: 16px; 
+        font-size: 16px;
         padding: 8px 8px 8px 20px;
     }
 
@@ -224,7 +224,7 @@ body {
     }
 
     .checkbox-group label {
-        font-size: 10px; 
+        font-size: 10px;
     }
 
     .submit-btn {
@@ -233,10 +233,9 @@ body {
     }
 }
 
-
 @media (max-height: 650px) {
     body {
-        align-items: flex-start; 
+        align-items: flex-start;
         padding-top: 30px;
         padding-bottom: 30px;
     }

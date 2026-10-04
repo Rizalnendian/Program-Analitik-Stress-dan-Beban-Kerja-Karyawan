@@ -1,20 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dashboard</title>
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="icon" type="image/svg+xml" href="../../LOGO warna.svg">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="../../CSS/karyawan/dashboard_karyawan.css">
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+        <link rel="icon" type="image/svg+xml" href="../../LOGO warna.svg" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="../../CSS/karyawan/dashboard_karyawan.css"
+        />
     </head>
     <body>
         <div class="app-layout" id="appDashboard">
-            
             <!-- Sidebar Overlay (Latar Belakang Gelap di Mobile) -->
             <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -22,12 +32,22 @@
             <aside class="sidebar" id="sidebar">
                 <!-- Logo atas navbar -->
                 <div class="sidebar-logo">
-                    <div class="logo-icon"><img src="../../LOGO putih.svg" alt="Logo" class="logo" width="32" height="32"></div>
+                    <div class="logo-icon">
+                        <img
+                            src="../../LOGO putih.svg"
+                            alt="Logo"
+                            class="logo"
+                            width="32"
+                            height="32"
+                        />
+                    </div>
                     <div class="logo-text">
                         <span class="app-name">EquiMind</span>
-                        <span class="app-sub">Sistem analitik stress dan beban kerja</span>
+                        <span class="app-sub"
+                            >Sistem analitik stress dan beban kerja</span
+                        >
                     </div>
-                    
+
                     <!-- Tombol Tutup Khusus Mobile -->
                     <button class="sidebar-close-btn" id="sidebarCloseBtn">
                         <i class="bi bi-x-lg"></i>
@@ -38,25 +58,41 @@
                 <div class="sidebar-user">
                     <div class="user-avatar">3</div>
                     <div class="user-name">Test nanti disini muncul nama</div>
-                    <div class="user-role">Manajer</div>
+                    <div class="user-role">Karyawan</div>
                 </div>
-                
+
                 <!-- Opsi navigasi halaman -->
                 <nav class="sidebar-nav">
                     <div class="nav-label">Menu Utama</div>
 
                     <div class="nav-item active">
-                        <span class="nav-icon"><i class="bi bi-house-door"></i></span>
+                        <span class="nav-icon"
+                            ><i class="bi bi-house-door"></i
+                        ></span>
                         <span>Dashboard</span>
                     </div>
 
-                    <div class="nav-item" onclick="window.location.href='../karyawan/profile.html'">
-                        <span class="nav-icon"><i class="bi bi-person-circle"></i></span>
+                    <div
+                        class="nav-item"
+                        onclick="
+                            window.location.href = '../karyawan/profile.html'
+                        "
+                    >
+                        <span class="nav-icon"
+                            ><i class="bi bi-person-circle"></i
+                        ></span>
                         <span>Profile</span>
                     </div>
 
-                    <div class="nav-item" onclick="window.location.href='../karyawan/survei.html'">
-                        <span class="nav-icon"><i class="bi bi-file-earmark-medical"></i></span>
+                    <div
+                        class="nav-item"
+                        onclick="
+                            window.location.href = '../karyawan/survei.html'
+                        "
+                    >
+                        <span class="nav-icon"
+                            ><i class="bi bi-file-earmark-medical"></i
+                        ></span>
                         <span>Survei stress & beban kerja</span>
                     </div>
                 </nav>
@@ -65,9 +101,16 @@
                 <div class="sidebar-footer">
                     <button
                         class="btn btn-outline btn-full btn-sm"
-                        style="color:rgba(255,255,255,.6);border-color:rgba(255,255,255,.2); width:100%; display:flex; align-items:center; gap:8px;">
-
-                        <span><i class="bi bi-door-closed"></i></span> 
+                        style="
+                            color: rgba(255, 255, 255, 0.6);
+                            border-color: rgba(255, 255, 255, 0.2);
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        "
+                    >
+                        <span><i class="bi bi-door-closed"></i></span>
                         <span><a href="../index.html">Logout</a></span>
                     </button>
                 </div>
@@ -75,7 +118,6 @@
 
             <!-- AREA KANAN -->
             <div class="right-panel">
-
                 <!-- TOP BAR -->
                 <header class="top-bar">
                     <div class="topbar-left">
@@ -87,7 +129,9 @@
                     </div>
 
                     <div class="topbar-right">
-                        <span class="topbar-time" id="hari-tanggal">-- -- ----</span>
+                        <span class="topbar-time" id="hari-tanggal"
+                            >-- -- ----</span
+                        >
                     </div>
                 </header>
 
@@ -98,14 +142,14 @@
                         <!-- Elemen diletakkan di sini -->
                     </div>
                 </main>
-            
             </div>
         </div>
 
         <!-- JavaScript untuk Toggle Menu -->
         <script>
             const sidebar = document.getElementById('sidebar');
-            const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+            const sidebarToggleBtn =
+                document.getElementById('sidebarToggleBtn');
             const sidebarCloseBtn = document.getElementById('sidebarCloseBtn');
             const sidebarOverlay = document.getElementById('sidebarOverlay');
 

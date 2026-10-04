@@ -1,32 +1,31 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.content{
+.content {
     min-height: 100%;
 }
 
-
-.font{
-    font-family: "Montserrat", sans-serif;
+.font {
+    font-family: 'Montserrat', sans-serif;
     font-optical-sizing: auto;
 }
 
-.deskripsi, .nama{
+.deskripsi,
+.nama {
     font-weight: 500;
     text-shadow: 3px 3px 5px black;
 }
 
-.nama{
-    font-family: "Bodoni Moda", serif;
+.nama {
+    font-family: 'Bodoni Moda', serif;
     font-optical-sizing: auto;
 }
 
-
 /* Left side */
-.branding{
+.branding {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,9 +40,8 @@
     min-height: 100vh;
 }
 
-
 /* Right side */
-.login-form{
+.login-form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -51,16 +49,14 @@
     margin: 0px;
     min-height: 100vh;
     /* flex: 1; */
-
-
 }
 
-.title{
+.title {
     margin-bottom: 75px;
 }
 
-
-.container-login, .container-branding{
+.container-login,
+.container-branding {
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -83,83 +79,105 @@
     background-color: #002855;
 }
 
-a.sign-up{
+a.sign-up {
     color: #004bb7;
     font-weight: bold;
 }
 
-a.sign-up :hover{
+a.sign-up :hover {
     color: #002855;
     font-weight: bold;
 }
 
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
-
-[class*=col]{
-    float:left;
-    padding:10px
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
 }
 
-@media only screen and (max-width:1032px){
-    [class*=col]{
+[class*='col'] {
+    float: left;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1032px) {
+    [class*='col'] {
         width: 100%;
     }
 
-    .branding{
+    .branding {
         min-height: 1%;
         padding: 10px;
     }
 
-    .container-branding{
+    .container-branding {
         padding: 20px 100px;
     }
 
-    .login-form{
+    .login-form {
         min-height: 700px;
     }
 
-    .title{
+    .title {
         margin-bottom: 50px;
     }
 }
 
-@media only screen and (max-width: 450px){
-    [class*=col]{
-        width: 100%; 
+@media only screen and (max-width: 450px) {
+    [class*='col'] {
+        width: 100%;
     }
 
-    .branding{
+    .branding {
         min-height: 200px;
     }
 
-    .container-branding{
+    .container-branding {
         padding: 0px 40px;
         min-height: 100px;
     }
 
-    .login-form{
+    .login-form {
         min-height: 500px;
         /* padding: 0px 40px; */
     }
 
-    .container-login{ 
+    .container-login {
         padding: 0px 40px;
     }
 
-    .title{
+    .title {
         margin-bottom: 0px;
     }
-
-
 }
