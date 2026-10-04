@@ -75,7 +75,7 @@
     font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 6px;
     transition: background 0.3s ease;
 }
 
