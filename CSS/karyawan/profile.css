@@ -329,7 +329,8 @@ html {
 
 /* Kotak abu-abu (pengganti input) */
 .display-box {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
     padding: 14px 16px;
     border-radius: 8px;
     font-size: 0.95rem;
