@@ -10,10 +10,11 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
         />
         <link rel="icon" type="image/svg+xml" href="../../LOGO warna.svg" />
+
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
             crossorigin="anonymous"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -136,8 +137,37 @@
                 <!-- CONTAINER KONTEN -->
                 <main class="content-container">
                     <div class="inner-content">
-                        <h1>test</h1>
-                        <!-- Elemen diletakkan di sini -->
+                        <div class="survei_form">
+                            <p class="survei_deskripsi">
+                                Survei ini membantu perusahaan memahami kondisi
+                                kerja dan beban kerja karyawan. Jawablah sesuai
+                                pengalaman Anda selama satu bulan terakhir.
+                                Tidak ada jawaban benar atau salah. Hasil
+                                individu hanya bisa dilihat oleh Anda sendiri.
+                                Manajer hanya melihat ringkasan kelompok yang
+                                terdiri dari minimal 10 orang. Survei ini bukan
+                                penilaian kinerja.
+                            </p>
+
+                            <h4 class="survei_section_title">Beban Kerja</h4>
+                            <h5 class="survei_section_question"></h5>
+                            <label for="rangeBubble" class="form-label"
+                                >Seberapa besar aktivitas mental dan persepsi
+                                (misalnya berpikir, mengambil keputusan,
+                                menghitung, mengingat, mengamati, mencari) yang
+                                dibutuhkan pekerjaan Anda?</label
+                            >
+                            <div class="form-range" data-bs-bubble>
+                                <input
+                                    type="range"
+                                    class="form-range-input"
+                                    min="0"
+                                    max="100"
+                                    value="60"
+                                    id="rangeBubble"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
@@ -166,5 +196,11 @@
             sidebarOverlay.addEventListener('click', closeSidebar);
         </script>
         <script src="../../JavaScript/tanggal.js" defer></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

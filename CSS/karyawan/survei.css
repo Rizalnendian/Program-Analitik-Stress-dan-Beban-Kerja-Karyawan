@@ -265,6 +265,26 @@ html {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+.survei_form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+}
+
+.survei_deskripsi {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.survei_section_title {
+    font-weight: 700;
+    color: #040914;
+    margin: 0;
+    text-align: center;
+}
+
 /* Setting responsive */
 @media (max-width: 768px) {
     /* Overlay side navbar */
