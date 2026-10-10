@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -140,13 +140,11 @@
 
                         <form class="task-form" action="#" method="post">
                             <div class="form-container row g-3">
-                                <h2 style="text-align: center">
+                                <h4 style="text-align: center">
                                     FORM ALOKASI TUGAS
-                                </h2>
-                                <div class="col-12 text-success">
-                                    <hr />
-                                </div>
-                                <div class="form-group col-md-6">
+                                </h4>
+
+                                <div class="form-group col-6 mb-5">
                                     <label
                                         class="form-label"
                                         for="nama"
@@ -170,7 +168,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6 mb-5">
                                     <label
                                         class="form-label"
                                         for="prioritas-tugas"
@@ -178,7 +176,7 @@
                                         >Divisi:</label
                                     >
                                     <select
-                                        class="form-select"
+                                        class="form-control"
                                         id="prioritas-tugas"
                                         name="prioritas-tugas"
                                         required
@@ -194,9 +192,16 @@
                                             Operasional
                                         </option>
                                     </select>
+                                    <div
+                                        id="passwordHelpBlock"
+                                        class="form-text"
+                                    >
+                                        Pastikan divisi sesuai dengan yang
+                                        terdaftar di sistem.
+                                    </div>
                                 </div>
 
-                                <div class="form-group col-6">
+                                <div class="form-group col-6 mb-5">
                                     <label
                                         class="form-label"
                                         for="nama-tugas"
@@ -212,7 +217,7 @@
                                     />
                                 </div>
 
-                                <div class="form-group col-6">
+                                <div class="form-group col-6 mb-5">
                                     <label
                                         class="form-label"
                                         for="tanggal-tugas"
@@ -228,7 +233,7 @@
                                     />
                                 </div>
 
-                                <div class="form-group col-12">
+                                <div class="form-group col-12 mb-5">
                                     <label
                                         class="form-label"
                                         for="deskripsi-tugas"
@@ -239,6 +244,7 @@
                                         class="form-control"
                                         id="deskripsi-tugas"
                                         name="deskripsi-tugas"
+                                        rows="4"
                                         required
                                     ></textarea>
                                 </div>
